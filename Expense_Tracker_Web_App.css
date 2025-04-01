@@ -1,0 +1,47 @@
+body {
+    background-color:  linen;
+  }
+  
+h1, p, div {
+    
+    color: rgb(126, 189, 66);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+  }
+
+label[for="Description"] {
+    overflow: auto;
+}
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(121, 182, 65);
+    color: #fff;
+}
+
+button {
+    margin: 10px;
+    padding: 8px 10px;
+    background-color: rgb(121, 182, 65);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}

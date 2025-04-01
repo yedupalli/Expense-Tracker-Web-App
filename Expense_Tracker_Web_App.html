@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Users/saipuri/Desktop/Expense_Tracker_Web_App.css">
+    <script src="/Users/saipuri/Desktop/Expense_Tracker_Web_App.js"></script>
+    <title>Expense Tracker</title>
+    <img src="/Users/saipuri/Downloads/istockphoto-1424757003-612x612.jpg" alt="Expense stock">
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker Web App</h1>
+        <p id="total_income">Total Income: $0.00</p>
+        <p id="total_expense">Total Expense: $0.00</p>
+        <p id="net_balance">Net Balance: $0.00</p>
+
+    </header>
+
+    <div id="tableContainer" class="header">
+        <label><b>Select Transaction</b>
+            <select id="transactionInput">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+        </label>
+        <br></br>
+        <label><b>Description</b>
+            <input type="text" id="Description" placeholder="Enter Description in text" name="Text Here" required>
+        </label>
+            
+        <label><b>Amount</b>
+            <input type="number" id="Amount" placeholder="Enter Amount in numbers" name="Enter Amount" required>
+        </label>
+        <button id="addTransactionBtn" onclick="addTransaction()" class="addBtn">Add Transaction</button>
+        <button id="clearTransactionBtn" onclick="clearTransaction()" class="addBtn">Clear All Transaction</button>
+    </div>
+
+    <table id="TrackerTable">
+        <tr>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Action</th>
+        </tr>
+    </table>
+</body>
+</html>
